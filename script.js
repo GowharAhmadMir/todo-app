@@ -17,3 +17,8 @@ function addTask() {
 
   input.value = "";
 } 
+function handleKey(event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+} 
