@@ -1,13 +1,13 @@
 function addTask() {
   let input = document.getElementById("taskInput");
 
-  if (input.value === "") return;
+  if (input.value.trim() === "") return;
 
   let li = document.createElement("li");
   li.textContent = input.value;
 
   let btn = document.createElement("button");
-  btn.textContent = "❌";
+  btn.textContent = "Delete";
   btn.onclick = function () {
     li.remove();
   };
@@ -16,4 +16,4 @@ function addTask() {
   document.getElementById("taskList").appendChild(li);
 
   input.value = "";
-}
+} 
