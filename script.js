@@ -22,3 +22,6 @@ function handleKey(event) {
     addTask();
   }
 } 
+function clearTasks() {
+  document.getElementById("taskList").innerHTML = "";
+}
